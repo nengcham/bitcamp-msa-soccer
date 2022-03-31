@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export default function Todo(){
+export default function TodoList(){
     const [inputs, setInputs] = useState({})
     const [result, setResult] = useState("")
     const {todo0} = inputs
