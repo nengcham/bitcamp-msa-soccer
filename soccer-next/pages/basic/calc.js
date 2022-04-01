@@ -8,10 +8,7 @@ export default function Calc(){
     const handleChange = (e) => {
         e.preventDefault()
         const { value, name } = e.target
-        setInputs({
-            ...inputs,
-            [name]: value
-        })
+        setInputs({ ...inputs, [name]: value })
     }
     
     const handleClick = (e) => {
