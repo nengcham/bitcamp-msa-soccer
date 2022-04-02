@@ -7,11 +7,10 @@ export default function BoardhtmlForm(){
     const handleChange = e => {
         e.preventDefault()
         const { name, value } = e.target
-        setInputs({ [name]: value })
+        setInputs({ ...inputs, [name]: value })
     }
     const handleSubmit = e => {
         e.preventDefault()
-        const request = {passengerId, name, teamId, subject}
         alert(`데이터셋 출력 : ${JSON.stringify(inputs)}`)
     }
     return (<>
