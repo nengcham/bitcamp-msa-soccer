@@ -12,6 +12,7 @@ export default function Bmi(){
   }
   const handleClick = (e) => {
       e.preventDefault()
+      alert(JSON.stringify(inputs))
       setResult(`${name}님의 Bmi지수는 ${(weight/height/height * 10000).toFixed(2)}입니다.`)
   }
 
